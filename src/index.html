@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Personal Website</title>
+  </head>
+  <body class="font-['Inter']">
+    <!-- Header -->
+    <header>
+      <nav
+        class="navbar w-full px-12 py-8 flex items-center bg-white justify-between fixed z-10 top-0"
+      >
+        <div class="nav__logo">
+          <a href="#">
+            <img src="assets/images/logo.png" alt="logo" class="w-32" />
+          </a>
+        </div>
+        <input type="checkbox" id="nav" class="hidden" />
+        <label for="nav" class="nav__toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="nav__menu flex-1 text-right">
+          <ul class="list-none">
+            <li class="inline-block mx-4">
+              <a class="uppercase tracking-wider hover:text-orange-400" href="#"
+                >About</a
+              >
+            </li>
+            <li class="inline-block mx-4">
+              <a class="uppercase tracking-wider hover:text-orange-400" href="#"
+                >Skills</a
+              >
+            </li>
+            <li class="inline-block mx-4">
+              <a class="uppercase tracking-wider hover:text-orange-400" href="#"
+                >Portfolio</a
+              >
+            </li>
+            <li class="inline-block mx-4">
+              <a class="uppercase tracking-wider hover:text-orange-400" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="w-full my-40">
+      <div class="main__title flex relative items-center flex-col">
+        <img
+          class="w-32 mb-8 rounded-full"
+          src="./assets/images/profile.png"
+          alt="profile"
+        />
+        <h1 class="relative text-6xl font-medium text-center leading-[4.2rem]">
+          Hi, I'm Irvan Moses <br />
+          <span
+            class="text-white before:w-full before:content-[''] before:h-20 before:absolute before:bg-orange-400 before:-z-10 before:-skew-y-1 before:left-[50%] before:-translate-x-1/2 before:top-[50%] before:-translate-y-1/2"
+            >User Interface Engineer</span
+          >
+          <br />
+          Based in Indonesia
+        </h1>
+      </div>
+      <div class="main__text flex flex-col mt-32 mx-16 mb-8">
+        <div class="biography mt-20">
+          <h2 class="text-center mb-4 text-lg font-light tracking-[2px]">
+            ABOUT ME
+          </h2>
+          <p class="text-5xl font-light text-center">
+            I love designing User Interface and spirit to learn about Front-end
+            Web Development with ReactJS and Bootstrap
+          </p>
+        </div>
+        <div class="skills mt-20">
+          <h2 class="text-center mb-4 text-lg font-light tracking-[2px]">
+            SKILLS
+          </h2>
+          <div class="list grid grid-cols-3 items-center gap-8">
+            <li class="list-none text-center">
+              <div>
+                <img class="w-24 mx-auto" src="./assets/images/figma.png" />
+              </div>
+              <p class="text-base mt-2">Figma</p>
+            </li>
+            <li class="list-none text-center">
+              <div>
+                <img class="w-24 mx-auto" src="./assets/images/adobe_xd.png" />
+              </div>
+              <p class="text-base mt-2">Adobe XD</p>
+            </li>
+            <li class="list-none text-center">
+              <div>
+                <img class="w-24 mx-auto" src="./assets/images/html.svg" />
+              </div>
+              <p class="text-base mt-2">HTML</p>
+            </li>
+            <li class="list-none text-center">
+              <div>
+                <img class="w-24 mx-auto" src="./assets/images/css.svg" />
+              </div>
+              <p class="text-base mt-2">CSS</p>
+            </li>
+            <li class="list-none text-center">
+              <div>
+                <img class="w-24 mx-auto" src="./assets/images/react.png" />
+              </div>
+              <p class="text-base mt-2">React JS</p>
+            </li>
+            <li class="list-none text-center">
+              <div>
+                <img class="w-24 mx-auto" src="./assets/images/bootstrap.png" />
+              </div>
+              <p class="text-base mt-2">Bootstrap</p>
+            </li>
+          </div>
+        </div>
+
+        <div class="services mt-20 text-center">
+          <h2 class="text-center mb-4 text-lg font-light tracking-[2px]">
+            SERVICES
+          </h2>
+
+          <div
+            class="list flex flex-col items-center md:grid sm:grid-cols-3 md:items-center md:gap-4"
+          >
+            <li
+              class="list-none inline-block m-4 px-12 py-8 font-medium border border-gray-200 hover:cursor-pointer hover:border-orange-400 hover:text-orange-400"
+            >
+              Web Design
+            </li>
+            <li
+              class="list-none inline-block m-4 px-12 py-8 font-medium border border-gray-200 hover:cursor-pointer hover:border-orange-400 hover:text-orange-400"
+            >
+              App Design
+            </li>
+            <li
+              class="list-none inline-block m-4 px-12 py-8 font-medium border border-gray-200 hover:cursor-pointer hover:border-orange-400 hover:text-orange-400"
+            >
+              Design to Code
+            </li>
+          </div>
+        </div>
+        <div
+          class="testimonial mt-20 py-16 text-center bg-gray-50 flex justify-center flex-wrap gap-48 gap-y-16"
+        >
+          <div>
+            <h2 class="text-center mb-4 text-lg font-light tracking-[2px]">
+              YEARS OF EXPERIENCE
+            </h2>
+            <h3 class="text-4xl font-normal -tracking-tight">3+ Years</h3>
+          </div>
+
+          <div>
+            <h2 class="text-center mb-4 text-lg font-light tracking-[2px]">
+              CLIENT SATISFACTION
+            </h2>
+            <h3 class="text-4xl font-normal -tracking-tight">100%</h3>
+          </div>
+
+          <div>
+            <h2 class="text-center mb-4 text-lg font-light tracking-[2px]">
+              PROJECTS DONE
+            </h2>
+            <h3 class="text-4xl font-normal -tracking-tight">10+</h3>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="company__logo flex mt-24 px-4 justify-center items-center flex-wrap gap-32 gap-y-16"
+      >
+        <img
+          width="200px"
+          src="../src/assets/images/microsoft.svg"
+          alt="Microsoft"
+        />
+        <img
+          width="200px"
+          src="../src/assets/images/spotify.svg"
+          alt="Spotify"
+        />
+        <img width="200px" src="../src/assets/images/medium.svg" alt="Medium" />
+        <img
+          width="200px"
+          src="../src/assets/images/aliexpress.svg"
+          alt="Alieexpress"
+        />
+      </div>
+
+      <div class="experience mt-24 flex justify-center flex-col items-center">
+        <h2 class="text-lg font-light uppercase tracking-[2px]">
+          Education & Experience
+        </h2>
+
+        <div class="list mt-8 flex justify-center text-center flex-wrap gap-16">
+          <div>
+            <p class="font-semibold">2023</p>
+            <p class="font-light text-2xl">
+              Bachelor Degree of Information System
+            </p>
+          </div>
+
+          <div>
+            <p class="font-semibold">Jan 2021 - Present</p>
+            <p class="font-light text-2xl">UI Designer in Pelorous Studio</p>
+          </div>
+
+          <div>
+            <p class="font-semibold">Jan 2022 - Present</p>
+            <p class="font-light text-2xl">UI/UX Designer in Prosettings.net</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="latest__projects mt-32 px-8 flex justify-center flex-col items-center"
+      >
+        <h2 class="text-lg font-light uppercase tracking-[2px]">
+          My Latest Projects
+        </h2>
+
+        <div class="list mt-8 flex justify-center text-center flex-wrap gap-16">
+          <li class="list-none flex flex-col items-center gap-4">
+            <img
+              class="w-full h-80 object-cover rounded-lg"
+              src="https://cdn.dribbble.com/users/5048254/screenshots/18911469/media/fa0201e25a8d312bbb3f4c92e7b15b07.png?compress=1&resize=1000x750&vertical=top"
+              alt=""
+            /><a
+              class="no-underline font-medium transition-all hover:text-orange-400"
+              href="#"
+              >Food Delivery App</a
+            >
+          </li>
+          <li class="list-none flex flex-col items-center gap-4">
+            <img
+              class="w-full h-80 object-cover rounded-lg"
+              src="https://cdn.dribbble.com/users/5048254/screenshots/17599501/media/63b37aa6115d375466c908b2f6af2ba7.png?compress=1&resize=1000x750&vertical=top"
+              alt=""
+            /><a
+              class="no-underline font-medium transition-all hover:text-orange-400"
+              href="#"
+              >Cryptocurrency Website</a
+            >
+          </li>
+          <li class="list-none flex flex-col items-center gap-4">
+            <img
+              class="w-full h-80 object-cover rounded-lg"
+              src="https://cdn.dribbble.com/users/5048254/screenshots/17599465/media/e2f1c6d52a0d8c8dd410b8136dc6ab16.png?compress=1&resize=1000x750&vertical=top"
+              alt=""
+            /><a
+              class="no-underline font-medium transition-all hover:text-orange-400"
+              href="#"
+              >Expense & Income Management App</a
+            >
+          </li>
+          <li class="list-none flex flex-col items-center gap-4">
+            <img
+              class="w-full h-80 object-cover rounded-lg"
+              src="https://cdn.dribbble.com/users/5048254/screenshots/15724326/media/c143d0310510047331a994e3728ba8ce.png?compress=1&resize=1000x750&vertical=top"
+              alt=""
+            /><a
+              class="no-underline font-medium transition-all hover:text-orange-400"
+              href="#"
+              >Smart Home App</a
+            >
+          </li>
+        </div>
+      </div>
+
+      <div class="contact px-8 mt-32 flex justify-center flex-col items-center">
+        <form class="mt-8 min-w-[80%] max-w-full">
+          <h2 class="mb-6 text-lg font-light uppercase tracking-[2px]">
+            Contact Me
+          </h2>
+          <div class="name flex flex-col gap-2">
+            <label for="yourName">Your Name</label>
+            <input
+              class="mb-6 p-4 border border-gray-200 rounded-lg outline-none"
+              type="text"
+              placeholder="Your Name"
+              name="yourName"
+            />
+          </div>
+
+          <div class="email flex flex-col gap-2">
+            <label for="yourEmail">Your Email</label>
+            <input
+              class="mb-6 p-4 border border-gray-200 rounded-lg outline-none"
+              type="text"
+              placeholder="Your Email"
+              name="yourEmail"
+            />
+          </div>
+
+          <div class="message flex flex-col gap-2">
+            <label for="yourMessage">Message</label>
+            <textarea
+              class="p-4 border border-gray-200 rounded-lg outline-none"
+              name="yourMessage"
+              placeholder="Your Message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button
+            class="p-4 mt-4 border-none rounded-lg outline-none transition-all text-white font-medium bg-orange-400 hover:bg-orange-500"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="mt-32 p-8 flex justify-center flex-col items-center text-center bg-gray-50 gap-4"
+    >
+      <div class="footer__social">
+        <ul class="flex justify-center gap-8">
+          <li class="list-none">
+            <a class="font-medium transition-all hover:text-orange-400" href="#"
+              >Facebook</a
+            >
+          </li>
+          <li class="list-none">
+            <a class="font-medium transition-all hover:text-orange-400" href="#"
+              >Instagram</a
+            >
+          </li>
+          <li class="list-none">
+            <a class="font-medium transition-all hover:text-orange-400" href="#"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright font-light">
+        <p>© 2022 Irvan Moses. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
